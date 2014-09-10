@@ -1,0 +1,9 @@
+*.sdf
+*.opensdf
+
+*.vcxproj.user
+
+*.suo
+
+Debug
+GccUnixR/
