@@ -50,6 +50,9 @@
 #include "permdata.h"
 #include "cmdall.h"
 #include "library.h"
+#ifndef __WATCOMC__
+    #include "clibext.h"
+#endif
 
 static void         *LastFile;
 static file_list    **LastLibFile;

@@ -44,6 +44,9 @@
 #include "objcalc.h"
 #include "objnode.h"
 #include "objpass1.h"
+#ifndef __WATCOMC__
+    #include "clibext.h"
+#endif
 
 
 static group_entry      *GetAutoGroup( bool );

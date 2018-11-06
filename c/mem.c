@@ -32,9 +32,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#ifdef __WATCOMC__
-    #include <malloc.h>     /* for _expand() */
-#endif
+#include <malloc.h>     /* for _expand() */
 #ifdef TRMEM
     #include "trmem.h"
 #endif
