@@ -38,6 +38,12 @@
 #include "clibext.h"
 #endif
 
+#ifndef LONG_IS_64BITS
+  #ifdef __LP64__
+    #define LONG_IS_64BITS
+  #endif
+#endif
+
 #if !defined(__sun__) && !defined(sun) && !defined(__sgi) && !defined(__hppa) && !defined(_AIX) && !defined(__alpha) && !defined(_TYPES_H_) && !defined(_SYS_TYPES_H)
     typedef unsigned        uint;
 #endif
